@@ -45,6 +45,10 @@ html {
       font-size: 16px;
       border-radius: 10px;
   }
+  .button:hover {
+    border: 3px solid #feec85;
+    color: #feec85;
+  }
   
     .fire {
       animation: animation 1s ease-in-out infinite alternate;
