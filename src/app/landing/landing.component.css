@@ -1,0 +1,185 @@
+html {
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+    /* .video-container {
+        position: relative;
+        top: 0;
+        height: 100%;
+    } */
+    h1 {
+      font-family: 'Mina', sans-serif;
+      color: #ec760c;
+    }
+    .title {
+      font-family: 'Cabin Sketch', monospace;
+      font-size: 5em;
+      text-transform: lowercase;
+      vertical-align: middle;
+      letter-spacing: .2em;
+      font-size: 6em;
+      color: black;
+    }
+  
+    .overlay-title {
+      background: rgba(0,0,0,0);
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      top: 15%;
+      z-index: 3;
+    }
+  
+    .button {
+      background-color: transparent;
+      border: 1px solid #ec760c;
+      margin-top: 120px;
+      color: #ec760c;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 10px;
+  }
+  
+    .fire {
+      animation: animation 1s ease-in-out infinite alternate;
+      -moz-animation: animation 1s ease-in-out infinite alternate;
+      -webkit-animation: animation 1s ease-in-out infinite alternate;
+      -o-animation: animation 1s ease-in-out infinite alternate;
+    }
+    
+    .burn {
+      animation: animation .65s ease-in-out infinite alternate;
+      -moz-animation: animation .65s ease-in-out infinite alternate;
+      -webkit-animation: animation .65s ease-in-out infinite alternate;
+      -o-animation: animation .65s ease-in-out infinite alternate;
+    }
+    
+    @keyframes animation
+    {
+    0% {text-shadow: 0 0 2px #fefcc9,
+      1px -1px 3px #feec85,
+      -2px -2px 4px #ffae34,
+      2px -4px 5px #ec760c,
+      -2px -6px 6px #cd4606,
+      0 -8px 7px #973716,
+      1px -9px 8px #451b0e;}
+    100% {text-shadow: 0 0 2px #fefcc9,
+      1px -1px 3px #fefcc9,
+      -2px -2px 10px #feec85,
+      2px -4px 6px #ffae34,
+      -2px -5px 5px #ec760c,
+      0 -8px 8px #cd4606,
+      1px -9px 8px  #973716;}
+    }
+    
+    @-moz-keyframes animation
+    {
+      0% {text-shadow: 0 0 2px #fefcc9,
+        1px -1px 3px #feec85,
+        -2px -2px 4px #ffae34,
+        2px -4px 5px #ec760c,
+        -2px -6px 6px #cd4606,
+        0 -8px 7px #973716,
+        1px -9px 8px #451b0e;}
+      100% {text-shadow: 0 0 2px #fefcc9,
+        1px -1px 3px #fefcc9,
+        -2px -2px 10px #feec85,
+        2px -4px 6px #ffae34,
+        -2px -5px 5px #ec760c,
+        0 -8px 8px #cd4606,
+        1px -9px 8px  #973716;}
+      }
+    
+    @-webkit-keyframes animation
+    {
+      0% {text-shadow: 0 0 2px #fefcc9,
+        1px -1px 3px #feec85,
+        -2px -2px 4px #ffae34,
+        2px -4px 5px #ec760c,
+        -2px -6px 6px #cd4606,
+        0 -8px 7px #973716,
+        1px -9px 8px #451b0e;}
+      100% {text-shadow: 0 0 2px #fefcc9,
+        1px -1px 3px #fefcc9,
+        -2px -2px 10px #feec85,
+        2px -4px 6px #ffae34,
+        -2px -5px 5px #ec760c,
+        0 -8px 8px #cd4606,
+        1px -9px 8px  #973716;}
+      }
+    
+    @-o-keyframes animation
+    {
+      0% {text-shadow: 0 0 2px #fefcc9,
+        1px -1px 3px #feec85,
+        -2px -2px 4px #ffae34,
+        2px -4px 5px #ec760c,
+        -2px -6px 6px #cd4606,
+        0 -8px 7px #973716,
+        1px -9px 8px #451b0e;}
+      100% {text-shadow: 0 0 2px #fefcc9,
+        1px -1px 3px #fefcc9,
+        -2px -2px 10px #feec85,
+        2px -4px 6px #ffae34,
+        -2px -5px 5px #ec760c,
+        0 -8px 8px #cd4606,
+        1px -9px 8px  #973716;}
+      }
+
+
+
+
+      .fullscreen-bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -100;
+      }
+      
+      .fullscreen-bg__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+      
+      @media (min-aspect-ratio: 16/9) {
+        .fullscreen-bg__video {
+          height: 300%;
+          top: -100%;
+        }
+      }
+      
+      @media (max-aspect-ratio: 16/9) {
+        .fullscreen-bg__video {
+          width: 300%;
+          left: -100%;
+        }
+      }
+      
+      @media (max-width: 767px) {
+        .fullscreen-bg {
+          background: url('assets/sparks.jpg') center center / cover no-repeat;
+        }
+        .title {
+          font-size: 3.2em;
+        }
+        h1 {
+          font-size: 1.8em;
+        }
+      
+        .fullscreen-bg__video {
+          display: none;
+        }
+      }
