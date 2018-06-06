@@ -11,7 +11,7 @@ html {
     } */
     h1 {
       font-family: 'Mina', sans-serif;
-      color: #ec760c;
+      color: #feec85;
     }
     .title {
       font-family: 'Cabin Sketch', monospace;
@@ -176,7 +176,7 @@ html {
       
       @media (max-width: 767px) {
         .fullscreen-bg {
-          background: url('assets/sparks.jpg') center center / cover no-repeat;
+          background-color: black;
         }
         .title {
           font-size: 3.2em;
@@ -189,3 +189,17 @@ html {
           display: none;
         }
       }
+      @-webkit-keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+     }
+     
+     @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+     }
+     
+     .fadeIn video {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+     }

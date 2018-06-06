@@ -6,11 +6,14 @@ import {Router} from "@angular/router";
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.css']
 })
+
 export class LandingComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+   }
 
   ngOnInit() {
+    
   }
   goCliftondale() {
     this.router.navigate(['cliftondale']); 

@@ -1,10 +1,14 @@
-<div class="fullscreen-bg">
-    <video autoplay loop class="fullscreen-bg_video" src="assets/Fuego_de_Refineria.mp4" allowfullscreen></video>
+
+<div class="video-container animated fade-In">
+    <div class="fullscreen-bg">
+        <video preload="auto" autoplay loop class="fullscreen-bg_video" src="assets/Fuego_de_Refineria.mp4" allowfullscreen id="video" poster="assets/sparks.jpg"></video>
+    </div>
 </div>
+
 <div class="container">
     <div class="overlay-title row">
         <div class="title logo-text col-lg-12"><span class="fire">PROTOTHOUGHT</span></div>
-        <div class="col-lg-12"><h1>All it takes, is a spark...</h1></div>
+        <div class="col-lg-12 mt-2"><h1><em>Education is not the filling of a pail, but the lighting of a fire.</em></h1><h3><span class="fire">-William Butler Yeats</span></h3></div>
         <div class="col-lg-12">
           <button class="button cliftondale" (click)="goCliftondale()">CLIFTONDALE</button>
           </div>
